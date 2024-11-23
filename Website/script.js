@@ -18,7 +18,7 @@ async function getWeather() {
 
     try {
         // ส่งคำขอไปที่ Python Backend (ปรับ endpoint ตามจริง)
-        const response = await fetch(`http://127.0.0.1:5000/weather?city=${city}`);
+        const response = await fetch(`http://52.187.146.94/weather?city=${city}`);
         
         if (!response.ok) {
             const errorData = await response.json();
